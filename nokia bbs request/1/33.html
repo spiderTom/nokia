@@ -1,0 +1,1526 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html >
+
+
+<head>
+  <title>诺基亚  工会论坛 - 列出所有主题</title>
+
+<meta name="copyright" content="This software is copyrighted by MyVietnam.net and released under the terms of the GNU General Public License GPL license. All rights reserved.">
+<meta name="Keywords" content="mvnForum, server side java, online meetings, collaboration, bulletin board, board, forum, discussion board, jsp, servlet, java, j2se, j2ee, database, jdbc, connection pool, mysql, MyVietnam, mvnForum, framework, web app, web application, servlet container, tomcat, jboss, weblogic, websphere">
+<meta name="Description" content="mvnForum is a powerful Jsp/Servlet forum (discussion board) - based on Java technology.">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="/mvnplugin/mvnforum/images/logo.gif" rel="SHORTCUT ICON">
+
+<meta http-equiv="Expires" content="-1">
+
+
+<link href="/bbs/mvnplugin/mvnforum/css/style.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" href="rss2?forum=33" title="列出所有主题 - RSS" />
+</head>
+<body leftmargin="0" topmargin="0">
+
+
+
+
+
+<link href="/bbs/mvnplugin/mvnforum/css/slideShow.css" rel="stylesheet" type="text/css">
+
+<script language="JavaScript" src="/bbs/mvnplugin/mvnforum/js/myvietnam.js" type="text/javascript"></script>
+<script language="JavaScript" src="/bbs/mvnplugin/mvnforum/js/jquery-1.8.3.min.js"></script>
+<script language="JavaScript" src="/bbs/mvnplugin/mvnforum/js/slideShow.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+function isBlank(field, strBodyHeader) {
+    strTrimmed = trim(field.value);
+    if (strTrimmed.length > 0) return false;
+    alert("\"" + strBodyHeader + "\" 是个必要填写的字段.");
+    field.focus();
+    return true;
+}
+function isEmail(field, strBodyHeader){
+    emailStr = field.value;
+    if(emailStr.length == 0) return true;
+    if(!complexEmailCheck(emailStr)) {
+        alert(strBodyHeader + " 是不合法的电子邮件.");
+        field.focus();
+        return false;
+    }
+    return true;
+}
+function checkGoodName(str, desc) {
+    s = trim(str);
+    len = s.length; 
+    for (i = 0; i < len; i++) {
+        b = s.charCodeAt(i);
+        if ((b >= toInt('a')) && (b <= toInt('z'))) { // not a cast, it's a function.
+            // low chars
+        } else if ((b >= toInt('A')) && (b <= toInt('Z'))) {
+            // up chars
+        } else if ((b >= toInt('0')) && (b <= toInt('9'))) {
+            // numbers 
+        } else if (( (b==toInt('_')) || (b==toInt('.')) || (b==toInt('@')) ) && (i != 0)) {
+            // very litte special chars
+        } else {
+            alert(desc + " \"" + s +  "\" " + "不是一个好的名称. 不合法的字符 \"" + s.charAt(i) + "\""); 
+            return false;
+            // not good name error
+        }
+    }
+    return true;
+}
+
+function toInt(c) {
+  return c.charCodeAt(0);
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+function SubmitFormSearch() {
+  if (ValidateFormSearch() == true ) {
+    document.submitformsearch.submitbutton.disabled=true;
+    document.submitformsearch.submit();
+  }
+}
+
+function ValidateFormSearch() {
+  if (isBlank(document.submitformsearch.key, "搜寻")) return false;
+  return true;
+}
+</script>
+
+
+
+<table width="95%" border="0" cellspacing="1" cellpadding="0" align="center">
+  <tr>
+    <td height="60">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          
+			<td rowspan="2" nowrap>
+				<MARQUEE direction=right width=215 height=30><FONT face=微软雅黑 color=RED size=5>NOKIA CN80</FONT></MARQUEE><br/>
+                <MARQUEE width=215 height=30><FONT face=微软雅黑 color=RED size=5>ZheJiang Trade Union</FONT></MARQUEE>
+           	</td>
+		    <td rowspan="2" nowrap>
+			    <div class="imageRotation">   
+				    <div class="imageBox">
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=6545"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide1.jpg" /></a>
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=7116"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide2.jpg" /></a>
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=8548"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide3.jpg" /></a>
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=3999"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide4.jpg" /></a>
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=14070"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide5.jpg" /></a>
+				        <a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=14519"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/slide5.jpg" /></a>
+				    </div>
+				    <div class="titleBox">
+				        <p class="active"><span>工会论坛代收代付账户管理办法</span></p>
+				        <p>如何查看论坛个人账户对帐单</p>
+				        <p>【按图说话】一步一步教你快速完成报销</p>
+				        <p>【楼层登记】-用于福利发放，长期有效【楼层变更时，请自行更改】</p>
+				        <p>【通知】论坛活动报名规则修改</div>
+				        <p>【通知】关于对自由交易版块（《集市交易【员工自荐】》和《租房、装修、买卖【员工自荐】》）暂时进行封版整顿的通知</div>
+				    <div class="icoBox">
+				        <span class="active" rel="1">1</span>
+				        <span rel="2">2</span>
+				        <span rel="3">3</span>
+				        <span rel="4">4</span>
+				        <span rel="5">5</span>
+				        <span rel="6">6</span>
+				    </div>
+				</div>
+         	</td>
+         	<td rowspan="2" nowrap>
+         		<a href="http://www.nsntradeunion.com.cn/bbs/mvnforum/viewthread?thread=15175"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/broadcast.gif" border="0" height="100" width="265" alt="broadcast"></a>
+         		
+         	</td>
+          <td width="100%" height="25" align="right" valign="top" nowrap class="portlet-font"">
+            <span class="welcomeHeader">欢迎</span>
+            
+              <font color="#FF0000">61463034(庄二)</font>
+              
+              
+              <font color="#FF0000">&nbsp;(帐户余额:0.0)</font>
+              
+              &nbsp;|&nbsp;<a class="command" href="logout" > 注销</a>
+              
+              <br/>
+              
+                最后登入日期:&nbsp;2016-9-21 7:32:13
+                来源地址&nbsp;194.251.119.198
+              
+            
+          </td>
+        </tr>
+        <tr>
+          <td height="35" valign="top">
+          <form action="searchprocess" name="submitformsearch">
+          
+            <table class="tborder" cellspacing="1" cellpadding="2" align="right">
+              <tr class="topmenu">
+                <td align="left" valign="top" nowrap>&nbsp;
+                  <img src="/bbs/mvnplugin/mvnforum/images/icon/search.gif" alt="搜寻" title="搜寻" hspace="0" vspace="0" border="0" align="bottom">
+                  <input type="text" size="10" name="key">
+                  <input type="button" name="submitbutton" value="搜寻" onclick="javascript:SubmitFormSearch();" class="portlet-form-button">&nbsp;
+                </td>
+              </tr>
+            </table>
+          </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table class="tborder" width="95%" cellspacing="1" cellpadding="2" align="center">
+  <tr class="topmenu_tr">
+    <td nowrap>&nbsp;
+      <a href="index" class="topmenu"><font color="#FFFFFF">首页</font></a>
+      
+      &nbsp;|&nbsp;<a href="listrecentthreads" class="topmenu"><font color="#FFFFFF">最新主题</font></a>
+      
+      &nbsp;|&nbsp;<a href="listonlineusers" class="topmenu"><font color="#FFFFFF">在线用户</font></a>
+      
+      
+      
+      
+      
+      &nbsp;|&nbsp;<a href="myprofile" class="topmenu"><font color="#FFFFFF">个人资料</font></a>
+      
+      
+      &nbsp;|&nbsp;<a href="/bbs/rms/index.action" class="topmenu" target="_blank"><font color="#FFFFFF">帐户续费扣费查询</font></a>
+      
+      
+      &nbsp;|&nbsp;<a href="search" class="topmenu"><font color="#FFFFFF">搜寻</font></a>
+      
+      <!-- &nbsp;|&nbsp;<a href="help" class="topmenu">说明</a> -->
+    
+      
+      
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+<!-- Broadcast under the right corner 
+ 	Nov 15, 2014
+-->
+<!-- <script type="text/javascript">
+	var x = 50,y = 60; 
+	var xin = true, yin = true; 
+	var step = 1; 
+	var delay = 20; 
+	var obj=document.getElementById("broadcast"); 
+	function float() { 
+		var L=T=0;
+		var R= document.body.clientWidth-obj.offsetWidth; 
+		var B = document.body.clientHeight-obj.offsetHeight; 
+		obj.style.left = x + document.body.scrollLeft; 
+		obj.style.top = y + document.body.scrollTop; 
+		x = x + step*(xin?1:-1); 
+		if (x < L) { xin = true; x = L} 
+		if (x > R){ xin = false; x = R} 
+		y = y + step*(yin?1:-1); 
+		if (y < T) { yin = true; y = T } 
+		if (y > B) { yin = false; y = B } 
+	} 
+	var itl= setInterval("float()", delay); 
+	obj.onmouseover=function(){clearInterval(itl);} 
+	obj.onmouseout=function(){itl=setInterval("float()", delay);} 
+</script> -->
+
+<br/>
+
+
+<table width="95%" align="center">
+<tr><td>
+<table cellspacing="0" cellpadding="0">
+<tr><td>
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr class="nav">
+    <td><img src="/bbs/mvnplugin/mvnforum/images/nav.gif"></td>
+    <td width="100%" nowrap>
+    <a class="nav" href="index">诺基亚工会论坛</a>&nbsp;&raquo;&nbsp;
+    <!-- <a class="nav" href="listforums">列出所有版块</a>&nbsp;&raquo;&nbsp;-->
+    版块: 舞蹈协会
+    </td>
+  </tr>
+</table>
+</td></tr>
+<tr><td height="15">&nbsp;</td></tr>
+<tr><td>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr class="portlet-font"><td>
+    <form>
+快速连结 &raquo; <select name="FastGoForum" onChange="gotoPage(this.options[this.selectedIndex].value)">
+
+        <option value=""></option>
+        <option value="listforums">诺基亚杭州综合版</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=7" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公告栏</option>
+
+        <option value="listthreads?forum=8" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工会财务</option>
+
+        <option value="listthreads?forum=21" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;议事厅(意见和反馈)</option>
+
+        <option value="listthreads?forum=26" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shuttle Bus/Car Club</option>
+
+        <option value="listthreads?forum=27" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团拜会</option>
+
+        <option value="listthreads?forum=38" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公益活动</option>
+
+        <option value="listthreads?forum=43" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attractive Hangzhou TC Workplace Development</option>
+
+        <option value=""></option>
+        <option value="listforums">诺基亚杭州文体协会</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;羽毛球协会/Badminton</option>
+
+        <option value="listthreads?forum=2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网球协会</option>
+
+        <option value="listthreads?forum=3" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;篮球协会</option>
+
+        <option value="listthreads?forum=4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;足球协会</option>
+
+        <option value="listthreads?forum=5" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乒乓球协会</option>
+
+        <option value="listthreads?forum=6" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;游泳协会</option>
+
+        <option value="listthreads?forum=9" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摄影协会</option>
+
+        <option value="listthreads?forum=10" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台球协会</option>
+
+        <option value="listthreads?forum=11" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Library</option>
+
+        <option value="listthreads?forum=12" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;桌游协会</option>
+
+        <option value="listthreads?forum=13" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Massage</option>
+
+        <option value="listthreads?forum=14" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;音乐协会</option>
+
+        <option value="listthreads?forum=28" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钓鱼协会</option>
+
+        <option value=""></option>
+        <option value="listforums">诺基亚杭州起居生活版</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=20" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;民以食为天</option>
+
+        <option value="listthreads?forum=29" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诺基亚优惠商户专版</option>
+
+        <option value="listthreads?forum=31" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单车协会</option>
+
+        <option value="listthreads?forum=37" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普拉提协会</option>
+
+        <option value="listthreads?forum=39" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子竞技协会</option>
+
+        <option value="listthreads?forum=40" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;财富论坛</option>
+
+        <option value="listthreads?forum=42" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;心理学爱好者</option>
+
+        <option value="listthreads?forum=18" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;集市交易【员工自荐】</option>
+
+        <option value="listthreads?forum=41" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;健康与营养</option>
+
+        <option value="listthreads?forum=19" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租房、装修、买卖【员工自荐】</option>
+
+        <option value=""></option>
+        <option value="listforums">诺基亚杭州Hiking Club</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=15" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;休闲游</option>
+
+        <option value="listthreads?forum=36" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户外俱乐部</option>
+
+        <option value=""></option>
+        <option value="listforums">诺基亚杭州女工委员会</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=16" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单身 Club</option>
+
+        <option value="listthreads?forum=17" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亲子 Club</option>
+
+        <option value="listthreads?forum=30" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;丽人堂</option>
+
+        <option value="listthreads?forum=32" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;瑜伽协会</option>
+
+        <option value="listthreads?forum=33" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;舞蹈协会</option>
+
+        <option value="listthreads?forum=34" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手工DIY协会（手工&amp;烘焙）</option>
+
+        <option value="listthreads?forum=35" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辣妈协会</option>
+
+        <option value=""></option>
+        <option value="listforums">诺基亚友好组织机构</option>
+        <option value="">---------------------------------</option>
+    
+        <option value="listthreads?forum=23" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;土司马斯</option>
+
+        <option value="listthreads?forum=24" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;党员天地</option>
+
+      </select>
+    </form>
+  </td></tr>
+</table>
+</td></tr>
+<tr><td height="5"></td></tr>
+<tr><td>
+
+<table width="95%" align="center">
+  <tr>
+    <td nowrap class="portlet-font">
+    <form action="listthreads">
+      
+      <input type="hidden" name="forum" value="33">
+      排序方式
+      <select name="sort">
+      <option value="ThreadLastPostDate" selected>最后发表日期</option>
+      <option value="ThreadCreationDate" >第一次发表日期</option>
+      <option value="MemberName" >作者</option>
+      <option value="ThreadReplyCount" >回复</option>
+      <option value="ThreadViewCount" >浏览</option>
+      </select>
+      排序
+      <select name="order">
+      <option value="ASC" >递增</option>
+      <option value="DESC" selected>递减</option>
+      </select>
+
+      <input type="button" value="前往" onclick="disabled=true; submit();" class="liteoption">
+    </form>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td align="right"><a href="#"><img src="/bbs/mvnplugin/mvnforum/images/tradeunion/list-800-120.gif" border="0" alt="Get my lunch!" title="Get my lunch!" height="120" width="800"></a></td>
+</tr></table>
+
+
+
+
+
+
+
+<table width="95%" align="center">
+  <tr>
+    <td valign="bottom" class="highlight">
+      
+      此版块中所有主题 (553 文章 在 347 主题)
+    </td>
+    <td align="right" valign="bottom">
+      
+      
+      <a class="command" href="addpost?forum=33">发表新主题</a>
+      <a class="command" href="addpost?isActively=yes&forum=33">发布报名活动</a>
+      
+    </td>
+  </tr>
+</table>
+
+<table class="tborder" width="95%" cellspacing="1" cellpadding="3" align="center">
+  <tr class="portlet-section-header">
+    <td colspan="3">主题</td>
+    <td align="center">作者</td>
+    <td align="center">回复</td>
+    <td align="center">浏览</td>
+    <td align="center">最后发表</td>
+  </tr>
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="9 上传附件"/>
+      
+      <a href="viewthread?thread=24904" class="messageTopic">
+        Y2016CN80浙江工会会员体检通知
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61344766" class="memberName">FuLansi(工会组织委员)</a>
+      
+    </td>
+    <td align="center"><b>42</b></td>
+    <td align="center"><b>5005</b></td>
+    <td align="center">
+      2016-9-21 5:48:43<br/>
+      
+      由 <a href="viewmember?member=61361169" class="memberName">不明真相群众演员</a>&nbsp;
+      
+      <a href="viewthread?thread=24904&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=25383" class="messageTopic">
+        讲座 《一杯茶的健康与喜乐》之二 实践升级：茶与修养，泡好一杯茶 (限人数30)
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61316122" class="memberName">杨丽雯</a>
+      
+    </td>
+    <td align="center"><b>2</b></td>
+    <td align="center"><b>219</b></td>
+    <td align="center">
+      2016-9-21 1:37:50<br/>
+      
+      由 <a href="viewmember?member=61316122" class="memberName">杨丽雯</a>&nbsp;
+      
+      <a href="viewthread?thread=25383&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="2 上传附件"/>
+      
+      <a href="viewthread?thread=24405" class="messageTopic">
+        集体办理新一代杭州社会保障市民卡（交通银行联名卡）
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61282168" class="memberName">甘国庆</a>
+      
+    </td>
+    <td align="center"><b>36</b></td>
+    <td align="center"><b>4031</b></td>
+    <td align="center">
+      2016-9-19 1:16:44<br/>
+      
+      由 <a href="viewmember?member=61472510" class="memberName">luxiaoyan</a>&nbsp;
+      
+      <a href="viewthread?thread=24405&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=25434" class="messageTopic">
+        【Nokia 志愿者俱乐部】2016/09/24 杭州少年儿童图书馆志愿者征集&amp;活动总结---【Nokia Course】《手机的前世、今生与未来》
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61476276" class="memberName">k寻找昵称中</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>92</b></td>
+    <td align="center">
+      2016-9-17 2:04:46<br/>
+      
+      由 <a href="viewmember?member=61476276" class="memberName">k寻找昵称中</a>&nbsp;
+      
+      <a href="viewthread?thread=25434&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=22920" class="messageTopic">
+        2016年度福利发放选择登记
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61403291" class="memberName">SeshaWang(宣传委员)</a>
+      
+    </td>
+    <td align="center"><b>11</b></td>
+    <td align="center"><b>5703</b></td>
+    <td align="center">
+      2016-9-13 1:38:49<br/>
+      
+      由 <a href="viewmember?member=61384956" class="memberName">徐蒙</a>&nbsp;
+      
+      <a href="viewthread?thread=22920&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=3999" class="messageTopic">
+        楼层登记-用于福利发放，长期有效【楼层变更时，请自行更改】
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61340230" class="memberName">马怀录</a>
+      
+    </td>
+    <td align="center"><b>35</b></td>
+    <td align="center"><b>62815</b></td>
+    <td align="center">
+      2016-9-12 7:01:00<br/>
+      
+      由 <a href="viewmember?member=61386079" class="memberName">Amanda.Yang</a>&nbsp;
+      
+      <a href="viewthread?thread=3999&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/love.gif' border='0' alt='love struck' title='love struck'></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="17 上传附件"/>
+      
+      <a href="viewthread?thread=18980" class="messageTopic">
+        [爱的呼唤]虞小明的病情跟踪和捐款公示
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=69001871" class="memberName">123123</a>
+      
+    </td>
+    <td align="center"><b>202</b></td>
+    <td align="center"><b>37198</b></td>
+    <td align="center">
+      2016-9-8 4:29:03<br/>
+      
+      由 <a href="viewmember?member=61466701" class="memberName">ChenSophia</a>&nbsp;
+      
+      <a href="viewthread?thread=18980&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/applause.gif' border='0' alt='applause' title='applause'></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=22332" class="messageTopic">
+        【Nokia 志愿者俱乐部】建议征集及意见反馈帖
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61324334" class="memberName">ZhaoShirley</a>
+      
+    </td>
+    <td align="center"><b>3</b></td>
+    <td align="center"><b>130</b></td>
+    <td align="center">
+      2016-8-5 7:22:48<br/>
+      
+      由 <a href="viewmember?member=10215329" class="memberName">caodaisy</a>&nbsp;
+      
+      <a href="viewthread?thread=22332&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="2 上传附件"/>
+      
+      <a href="viewthread?thread=21223" class="messageTopic">
+        素剪来了，上门理发快捷服务每周一下午，双子东塔14楼茶水间&amp;东信1楼茶水间
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=10175556" class="memberName">吴波 Bobby(工会主席)</a>
+      
+    </td>
+    <td align="center"><b>36</b></td>
+    <td align="center"><b>4431</b></td>
+    <td align="center">
+      2016-8-5 7:14:27<br/>
+      
+      由 <a href="viewmember?member=61408886" class="memberName">Ice-Blue</a>&nbsp;
+      
+      <a href="viewthread?thread=21223&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=24747" class="messageTopic">
+        [置顶]：2016年诺基亚杭州演讲大赛即将开始，【We Want You】2016 Nokia Hangzhou Speech Contest is coming!
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61472754" class="memberName">WUXI</a>
+      
+    </td>
+    <td align="center"><b>3</b></td>
+    <td align="center"><b>189</b></td>
+    <td align="center">
+      2016-8-4 3:40:01<br/>
+      
+      由 <a href="viewmember?member=61469116" class="memberName">ZhangAshley</a>&nbsp;
+      
+      <a href="viewthread?thread=24747&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=24164" class="messageTopic">
+        【Nokia 志愿者俱乐部】诺基亚和上海贝尔杭州公益夏令营
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61436307" class="memberName">KEMA</a>
+      
+    </td>
+    <td align="center"><b>7</b></td>
+    <td align="center"><b>956</b></td>
+    <td align="center">
+      2016-7-27 2:06:22<br/>
+      
+      由 <a href="viewmember?member=61470693" class="memberName">LJ</a>&nbsp;
+      
+      <a href="viewthread?thread=24164&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/rose.gif' border='0' alt='rose' title='rose'></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="6 上传附件"/>
+      
+      <a href="viewthread?thread=23033" class="messageTopic">
+        [置顶] 诺基亚浙江工会2016年度旅游政策公告 [2016年4月15日生效]
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61428632" class="memberName">LeiJulie (工会生活部长)</a>
+      
+    </td>
+    <td align="center"><b>11</b></td>
+    <td align="center"><b>2141</b></td>
+    <td align="center">
+      2016-7-15 0:22:37<br/>
+      
+      由 <a href="viewmember?member=61428632" class="memberName">LeiJulie (工会生活部长)</a>&nbsp;
+      
+      <a href="viewthread?thread=23033&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="3 上传附件"/>
+      
+      <a href="viewthread?thread=7116" class="messageTopic">
+        如何查看论坛个人账户对帐单-How to check your current status of the account in the forum of CN80 ZheJiang Trade Union
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=10187632" class="memberName">HeZhibin</a>
+      
+    </td>
+    <td align="center"><b>13</b></td>
+    <td align="center"><b>2563</b></td>
+    <td align="center">
+      2016-4-12 2:22:20<br/>
+      
+      由 <a href="viewmember?member=61466096" class="memberName">童海燕</a>&nbsp;
+      
+      <a href="viewthread?thread=7116&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="128 上传附件"/>
+      
+      <a href="viewthread?thread=16948" class="messageTopic">
+        【Nokia 志愿者俱乐部】志愿者征集帖
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61457966" class="memberName">Libra6700</a>
+      
+    </td>
+    <td align="center"><b>35</b></td>
+    <td align="center"><b>3127</b></td>
+    <td align="center">
+      2016-3-31 8:46:06<br/>
+      
+      由 <a href="viewmember?member=61324334" class="memberName">ZhaoShirley</a>&nbsp;
+      
+      <a href="viewthread?thread=16948&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/smile.gif' border='0' alt='smile' title='smile'></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=22350" class="messageTopic">
+        【Nokia 志愿者俱乐部】2016杭州G20峰会志愿活动相关资讯
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61324334" class="memberName">ZhaoShirley</a>
+      
+    </td>
+    <td align="center"><b>3</b></td>
+    <td align="center"><b>1174</b></td>
+    <td align="center">
+      2016-3-11 4:56:00<br/>
+      
+      由 <a href="viewmember?member=61324334" class="memberName">ZhaoShirley</a>&nbsp;
+      
+      <a href="viewthread?thread=22350&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/rose.gif' border='0' alt='rose' title='rose'></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+       
+         <img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" title="2 上传附件"/>
+      
+      <a href="viewthread?thread=6545" class="messageTopic">
+        工会论坛代收代付账户管理办法-暨续费充值指南
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=10187632" class="memberName">HeZhibin</a>
+      
+    </td>
+    <td align="center"><b>12</b></td>
+    <td align="center"><b>7027</b></td>
+    <td align="center">
+      2016-1-21 7:44:03<br/>
+      
+      由 <a href="viewmember?member=62021644" class="memberName">黄杰</a>&nbsp;
+      
+      <a href="viewthread?thread=6545&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif"/>
+      
+      
+      <a href="viewthread?thread=14070" class="messageTopic">
+        论坛活动报名规则修改
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61403291" class="memberName">SeshaWang(宣传委员)</a>
+      
+    </td>
+    <td align="center"><b>11</b></td>
+    <td align="center"><b>1452</b></td>
+    <td align="center">
+      2014-12-25 7:06:08<br/>
+      
+      由 <a href="viewmember?member=61403612" class="memberName">*frank*</a>&nbsp;
+      
+      <a href="viewthread?thread=14070&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+   
+      
+        <img src="/bbs/mvnplugin/mvnforum/images/icon/sticky.gif"/>
+      
+      
+      <a href="viewthread?thread=4206" class="messageTopic">
+        跳舞协会 会员登记贴
+      </a>      
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61369465" class="memberName">陈彩燕 (经审委）</a>
+      
+    </td>
+    <td align="center"><b>16</b></td>
+    <td align="center"><b>1170</b></td>
+    <td align="center">
+      2014-12-2 7:56:55<br/>
+      
+      由 <a href="viewmember?member=61469259" class="memberName">秦小猪</a>&nbsp;
+      
+      <a href="viewthread?thread=4206&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+      
+      <a href="viewthread?thread=24520" class="messageTopic">
+         &lt;Bachata lv1.5 补报&gt;6月7日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>75</b></td>
+    <td align="center">
+      2016-7-18 8:07:02<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24520&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/biggrin.gif' border='0' alt='biggrin' title='biggrin'></td>
+    <td>
+      
+      <a href="viewthread?thread=24519" class="messageTopic">
+        &lt;Salsa lv1 补报&gt;5月27日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>43</b></td>
+    <td align="center">
+      2016-7-18 8:05:09<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24519&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/biggrin.gif' border='0' alt='biggrin' title='biggrin'></td>
+    <td>
+      
+      <a href="viewthread?thread=24518" class="messageTopic">
+        &lt;Salsa lv1 补报&gt;5月25日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>16</b></td>
+    <td align="center">
+      2016-7-18 8:03:48<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24518&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/biggrin.gif' border='0' alt='biggrin' title='biggrin'></td>
+    <td>
+      
+      <a href="viewthread?thread=24517" class="messageTopic">
+          &lt;salsa lv1 补报&gt;5月23日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>20</b></td>
+    <td align="center">
+      2016-7-18 8:01:21<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24517&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/biggrin.gif' border='0' alt='biggrin' title='biggrin'></td>
+    <td>
+      
+      <a href="viewthread?thread=24516" class="messageTopic">
+         &lt;salsa lv1 补报&gt;5月20日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>31</b></td>
+    <td align="center">
+      2016-7-18 7:53:19<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24516&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+      
+      <a href="viewthread?thread=24515" class="messageTopic">
+        &lt;Bachata lv1.5 补报&gt;5月10日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>35</b></td>
+    <td align="center">
+      2016-7-18 7:50:49<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24515&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"><img src='/bbs/mvnplugin/mvnforum/images/emotion/biggrin.gif' border='0' alt='biggrin' title='biggrin'></td>
+    <td>
+      
+      <a href="viewthread?thread=24514" class="messageTopic">
+         &lt;Bachata lv1.5 补报&gt;4月26日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>19</b></td>
+    <td align="center">
+      2016-7-18 7:48:37<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24514&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+      
+      <a href="viewthread?thread=24513" class="messageTopic">
+        &lt;Bachata lv1.5 补报&gt;4月19日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>19</b></td>
+    <td align="center">
+      2016-7-18 7:47:22<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24513&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate0">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+      
+      <a href="viewthread?thread=24512" class="messageTopic">
+         	&lt;Bachata lv1.5 补报&gt;4月12日晚 
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>21</b></td>
+    <td align="center">
+      2016-7-18 7:35:15<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24512&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+
+
+  <tr class="portlet-section-alternate">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td width="16"></td>
+    <td>
+      
+      <a href="viewthread?thread=24511" class="messageTopic">
+        &lt;Bachata lv1.5 补报&gt;4月5日晚
+      </a>
+      <!-- <br/>-->
+      
+    </td>
+    <td align="center">
+      
+      <a href="viewmember?member=61374565" class="memberName">李小木</a>
+      
+    </td>
+    <td align="center"><b>0</b></td>
+    <td align="center"><b>24</b></td>
+    <td align="center">
+      2016-7-18 7:18:31<br/>
+      
+      由 <a href="viewmember?member=61374565" class="memberName">李小木</a>&nbsp;
+      
+      <a href="viewthread?thread=24511&lastpage=yes#lastpost" class="messageTopic"><img src="/bbs/mvnplugin/mvnforum/images/icon/right.gif" border="0" alt="最后一页" title="最后一页"></a>
+    </td>
+  </tr>
+
+
+
+</table>
+
+<table width="95%" align="center">
+  <tr>
+    <td>
+      
+
+
+<table cellspacing="0" cellpadding="0">
+  <tr class="pager">
+    <td align="right" nowrap>
+      一般主题: 346&nbsp;&nbsp;&nbsp;页: 35&nbsp;&nbsp;&nbsp;[
+      
+      
+        
+          <span class="pagerCurrent">1</span>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=10" class="pager">2</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=20" class="pager">3</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=30" class="pager">4</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=40" class="pager">5</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=50" class="pager">6</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=60" class="pager">7</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=70" class="pager">8</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=80" class="pager">9</a>
+        
+      
+        
+          <a href="listthreads?forum=33&offset=90" class="pager">10</a>
+        
+      
+      | <a href="listthreads?forum=33&offset=10" class="pager">下一页</a> ]
+    </td>
+  </tr>
+</table>
+
+
+    </td>
+    
+    <td align="right">
+    <a class="command" href="addpost?forum=33">发表新主题</a>
+    <a class="command" href="addpost?isActively=yes&forum=33">发布报名活动</a>
+    </td>
+    
+  </tr>
+</table>
+<br/>
+<table width="95%" border="0" align="center">
+  
+  <tr class="portlet-font">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/global_announce.gif" border="0"></td>
+    <td>这是一个全域的公告主题</td>
+  </tr>
+  
+  
+  
+  <tr class="portlet-font">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/sticky.gif" border="0"></td>
+    <td>这是一个 sticky 的主题</td>
+  </tr>
+  
+  
+  
+  <tr class="portlet-font">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_hot_no.gif" border="0"></td>
+    <td>这是个热门主题，但从你上次登入后，没有新增的主题</td>
+  </tr>
+  
+  
+  
+  <tr class="portlet-font">
+    <td width="16"><img src="/bbs/mvnplugin/mvnforum/images/icon/f_norm_no.gif" border="0"></td>
+    <td>从你上次登入后，没有新增的主题</td>
+  </tr>
+  
+  
+  <tr class="portlet-font">
+    <td width="16" align="center"><img src="/bbs/mvnplugin/mvnforum/images/icon/attach.gif" border="0"></td>
+    <td>这个主题有附件</td>
+  </tr>
+  
+</table>
+<br/>
+
+
+<br/>
+
+
+
+<div align="center" class="pageFooter">
+  <!--
+  We request you retain the full copyright notice below including the link to www.mvnForum.com.
+  This not only gives respect to the large amount of time given freely by the developers
+  but also helps build interest, traffic and use of mvnForum. If you cannot (for good
+  reason) retain the full copyright we request you at least leave in place the
+  "Powered by mvnForum" line, with mvnForum linked to http://www.mvnForum.com.
+  These conditions are parts of the licence this software is released under.
+  For detailed information about mvnForum License Agreement, look at the License Notice at
+  the top of all jsp, java files, README.txt and the GNU General Public License.
+
+  NOTE: In case you need to remove this "Powered by mvnForum", please contact us at 
+  web site www.MyVietnam.net to order a special "Copyright notice Removal" license 
+  with a small license fee. After receiving this special license, you can remove 
+  the copyright notice in this footer.jsp file.
+
+  MyVietnam.net Group
+  -->
+  Powered by <a href="http://www.mvnForum.com" target="_blank">mvnForum 1.0.2 GA</a> (Build: 15 July 2006)<br/>
+  Amended by <a href="mailto:sesha.wang@nsn.com">Sesha.Wang</a><br>
+  Copyright &copy; 2016 </div>
+
+</body>
+</html>
